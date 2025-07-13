@@ -1,13 +1,13 @@
 /* style.css */
 body {
   font-family: Arial, sans-serif;
-  background: #ffe4e6; /* Rosa pastel de fondo */
+  background: #ffe4e6; /* Rosa pastel */
   padding: 20px;
 }
 
 h1 {
   text-align: center;
-  color: #d6336c; /* Título en un tono más oscuro de rosa */
+  color: #d6336c; /* Rosa intenso para el título */
 }
 
 .semestre {
@@ -17,6 +17,10 @@ h1 {
   border-left: 5px solid #ffbfd8; /* Rosa suave */
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+.semestre:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 .semestre h2 {
@@ -25,6 +29,7 @@ h1 {
 }
 
 .ramo {
+  position: relative;
   cursor: pointer;
   padding: 10px;
   margin: 8px 0;
@@ -34,17 +39,40 @@ h1 {
   transition: background 0.2s ease, transform 0.1s ease;
 }
 
+/* Hover suavizado */
 .ramo:hover {
   background-color: #ffedf1;
 }
 
+/* Al hacer click, generamos un “efecto de presión” con escala y cambio de sombra */
 .ramo:active {
-  transform: scale(0.97);
+  transform: scale(0.95);
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
 }
 
+/* Estado tachado */
 .ramo.tachado {
   text-decoration: line-through;
   color: #999999;
   opacity: 0.7;
 }
 
+/* Animación al marcar/desmarcar (fade de opacidad) */
+.ramo {
+  animation: none;
+}
+.ramo.tachado {
+  animation: fadeOut 0.3s forwards;
+}
+.ramo:not(.tachado) {
+  animation: fadeIn 0.3s forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to   { opacity: 0.7; }
+}
+@keyframes fadeIn {
+  from { opacity: 0.7; }
+  to   { opacity: 1; }
+}
