@@ -1,15 +1,15 @@
 const malla = {
-  "Semestre 1": ["Introducción a las Matemáticas", "Álgebra", "Física Mecánica", "Química y Medio Ambiente", "Introducción a la Ingeniería", "Electivo de Comunicación", "Inglés Técnico I"],
-  "Semestre 2": ["Álgebra Lineal", "Cálculo I", "Programación", "Fundamentos de Gestión", "Electivo de Desarrollo del Pensamiento", "Electivo de Comunicación", "Inglés Técnico II"],
-  "Semestre 3": ["Cálculo II", "Probabilidad y Estadística", "Tecnologías para la Gestión", "Teoría Organizacional", "Electivo de Desarrollo Personal", "Inglés Técnico III"],
-  "Semestre 4": ["Cálculo III", "Ecuaciones Diferenciales", "Programación Avanzada", "Electricidad y Electromagnetismo", "Contabilidad y Costos", "Inglés Técnico IV"],
-  "Semestre 5": ["Ciencia y Resistencia de Materiales", "Termodinámica", "Microeconomía", "Optimización", "Gestión de Operaciones I"],
-  "Semestre 6": ["Mecánica de Fluidos", "Macroeconomía", "Inferencia Estadística", "Investigación Operativa", "Gestión de Operaciones II"],
-  "Semestre 7": ["Simulación de Procesos", "Derecho de Empresa y Ambiental", "Procesos Industriales", "Especialidad I", "Marketing", "E-commerce & E-business"],
-  "Semestre 8": ["Consultoría de Empresas", "Especialidad II", "Finanzas", "Gestión Estratégica", "Trabajo de Título (Inicio)"],
-  "Semestre 9": ["Especialidad III", "Plan de Negocios", "Economía y Desarrollo Regional", "Formulación y Evaluación de Proyectos", "Ingeniería Económica"],
-  "Semestre 10": ["Administración y Dirección de Proyectos", "Innovación y Emprendimiento", "Electivo de Responsabilidad Social", "Electivo de Ética", "Trabajo de Título (Cierre)"],
-  "Semestre 11": ["Práctica I", "Práctica II"]
+  "Semestre 1": ["Introducción a las Matemáticas", "Introducción a la Ingeniería", "Fundamentos de Gestión", "Tecnologías para la Gestión", "Electivo de Desarrollo del Pensamiento"],
+  "Semestre 2": ["Álgebra", "Cálculo I", "Química y Medio Ambiente", "Programación", "Electivo de Comunicación"],
+  "Semestre 3": ["Álgebra Lineal", "Cálculo II", "Física Mecánica", "Probabilidad y Estadística", "Programación Avanzada", "Electivo de Comunicación"],
+  "Semestre 4": ["Cálculo III", "Ciencia y Resistencia de Materiales", "Teoría Organizacional", "Taller de Aplicación Industrial", "Inglés Técnico I"],
+  "Semestre 5": ["Ecuaciones Diferenciales", "Mecánica de Fluidos", "Optimización", "Inferencia Estadística", "Contabilidad y Costos", "Inglés Técnico II"],
+  "Semestre 6": ["Electricidad y Electromagnetismo", "Termodinámica", "Investigación Operativa", "Microeconomía", "Electivo de Desarrollo Personal"],
+  "Semestre 7": ["Electrónica y Electrotecnia", "Gestión de Operaciones I", "Especialidad I", "Macroeconomía", "Ingeniería Económica", "Inglés Técnico III", "Práctica I"],
+  "Semestre 8": ["Gestión de Operaciones II", "Consultoría de Empresas", "Gestión Estratégica", "E-Commerce & E-Business", "Finanzas", "Inglés Técnico IV"],
+  "Semestre 9": ["Procesos Industriales", "Especialidad II", "Innovación y Emprendimiento", "Formulación y Evaluación de Proyectos", "Economía y Desarrollo Regional", "Electivo de Ética", "Práctica II"],
+  "Semestre 10": ["Simulación de Procesos", "Derecho de Empresa y Ambiental", "Marketing", "Administración y Dirección de Proyectos", "Plan de Negocios", "Electivo de Responsabilidad Social"],
+  "Semestre 11": ["Especialidad III", "Trabajo de Título"]
 };
 
 const contenedor = document.getElementById("semestres");
