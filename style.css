@@ -1,13 +1,13 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #FAE0EC;
+  background-color: #ffe4e6; /* rosa pastel */
   margin: 0;
   padding: 0;
 }
 
 h1, h2 {
   text-align: center;
-  color: #800080;
+  color: #d6336c;
 }
 
 .container {
@@ -47,7 +47,7 @@ h1, h2 {
   cursor: pointer;
   font-weight: bold;
   color: #800080;
-  transition: transform 0.1s ease, background 0.2s ease;
+  transition: transform 0.1s ease, background 0.2s ease, opacity 0.3s ease;
 }
 
 .materia:hover {
@@ -58,7 +58,16 @@ h1, h2 {
   transform: scale(0.97);
 }
 
+/* Marca tachada cuando ya cursada */
 .materia.tachada {
   text-decoration: line-through;
   opacity: 0.5;
+}
+
+/* Bloqueada (prerrequisitos no cumplidos) */
+.materia.bloqueada {
+  background-color: #e0e0e0;
+  color: #aaa;
+  pointer-events: none;
+  opacity: 0.6;
 }
